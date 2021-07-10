@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img src="images/logo.svg" alt="logo" class="logo">
+
+  <div class="tip-container">
+    <div class="info">
+      <p>Bill</p>
+      <div class="input-container">
+        <img src="images/icon-dollar.svg" alt="icon-dollar"><input type="number" id="bill" min="1" max="500" required placeholder="0.0">
+      </div>
+      <p>Select Tip %</p>
+      <div class="buttons">
+        <button class="btn"><span class="value">5</span>%</button>
+        <button class="btn"><span class="value">10</span>%</button>
+        <button class="btn"><span class="value">15</span>%</button>
+        <button class="btn"><span class="value">25</span>%</button>
+        <button class="btn"><span class="value">50</span>%</button>
+        <input type="number" id="custom" min="1" max="500" required placeholder="Custom">
+      </div>
+      <p>Number of People</p>
+      <div class="input-container">
+        <img src="images/icon-person.svg" alt="icon-person"><input type="number" id="person" min="1"  max="50" required placeholder="0">
+      </div>
+      <small class="red">Can't be zero</small>
+    </div>
+    <div class="result">
+      <div class="row">
+        <p class="white">Tip Amount <br><small>/ person</small></p>
+        <span class="total">$<span class="tip-value">0.00</span></span>
+      </div>
+      <div class="row">
+        <p class="white">Total <br><small>/ person</small></p>
+        <span class="total">$<span class="total-value">0.00</span></span>
+      </div>
+      <button class="reset">Reset</button>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/DmytroTarasiuk">Dmytro Tarasiuk</a>.
+  </div>
+
+</body>
+</html>

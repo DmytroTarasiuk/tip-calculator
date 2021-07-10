@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c5e4e7;
+    font-family: 'Space Mono', sans-serif;
+}
+
+p, small {
+    color: grey
+}
+
+.tip-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin-top: 4rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.info {
+    width: 50%;
+}
+
+input {
+    border: none;
+    width: 80%;
+    color: #023e41;
+    text-align: right;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #f3f8fb;
+    font-weight: bold;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::placeholder {
+    text-align: right;
+}
+
+input:focus {
+    outline: 0;
+    border: #5da99f;
+}
+
+.input-container {
+    background-color: #f3f8fb;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.btn {
+    background-color: #00474b;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    width: 80px;
+    padding: 0.25rem;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.btn.active {
+    background-color: #9fe8df;
+    color: #023e41
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+#custom {
+    width: 80px;
+    margin-top: 3px;
+}
+
+.result {
+    width: 50%;
+    position: relative;
+    background-color: #00474b;
+    padding: 1rem;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.white {
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total {
+    color: #27c1ac;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.reset {
+    background-color: #9fe8df;
+    border: none;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.red {
+    color:red;
+    display: none;
+}
+
+@media(max-width: 650px) {
+    body {
+        height: auto;
+    }
+    .tip-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .info {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .result {
+        width: 90%;
+    }
+    .logo {
+        margin-top: 20px;
+    }
+}
